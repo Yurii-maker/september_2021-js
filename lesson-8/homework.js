@@ -24,26 +24,16 @@
 
 // -- змініть кожному елементу колір фону на червоний
 
-// let elements = [document.getElementById('content'), document.getElementById('rules')];
+// let elements = document.body.children;
 // for (const element of elements) {
 //     element.style.background = 'red'
-//
-// }
-// let redLists = document.getElementsByClassName('fc_rules');
-// for (const redLiElement of redLists) {
-//     redLiElement.style.background = 'red'
 // }
 
 // -- змініть кожному елементу колір тексту на синій
 
-// let elements = [document.getElementById('content'), document.getElementById('rules')];
+// let elements = document.body.children;
 // for (const element of elements) {
-//     element.style.background = 'blue'
-//
-// }
-// let blueLists = document.getElementsByClassName('fc_rules');
-// for (const redLiElement of blueLists) {
-//     redLiElement.style.background = 'blue'
+//     element.style.color = 'blue'
 // }
 
 // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
