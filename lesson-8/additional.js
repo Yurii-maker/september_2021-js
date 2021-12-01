@@ -8,10 +8,18 @@
 //
 //         for (const element of obj.children) {
 //             if (element.classList.length > 0) {
-//                 arrayOfClasses.push(element.classList.value);
+//
+//                 for (let i = 0; i < element.classList.length; i++) {
+//                     if (!arrayOfClasses.includes(element.classList[i])) {
+//
+//                         arrayOfClasses.push(element.classList[i]);
+//                     }
+//
+//                 }
 //
 //             }
 //             reCall(element)
+//
 //         }
 //
 //     }
