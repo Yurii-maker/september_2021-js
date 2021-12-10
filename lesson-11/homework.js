@@ -36,9 +36,13 @@
 // let btn = document.createElement('button');
 // btn.innerText = 'save';
 // document.body.append(form, btn);
-// let carsArray = [];
+// let key = 'cars';
+//
+// let save = (model, type, volume) => {
+//     let array = JSON.parse(localStorage.getItem(key)) || [];
+//     array.push({model, type, volume});
+//     localStorage.setItem(key, JSON.stringify(array))
+// };
 // btn.onclick = () => {
-//     let car = {model: input.value, type: input2.value, volume: input3.value};
-//     carsArray.push(car)
-//     localStorage.setItem('cars', JSON.stringify(carsArray))
+//     save(input.value, input2.value, input3.value)
 // }
