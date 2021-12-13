@@ -1,0 +1,42 @@
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    justify-content: center;
+
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+
+    border: 2px solid aqua;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.post h2 {
+    height: 80px
+}
+
+.post > h3 {
+    height: 150px
+}
+
+.btn {
+    margin-top: 50px
+}
