@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    justify-content: center;
+
+}
+
+.post, .comment {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    margin: 5px;
+
+}
+
+.post h2, .comment h2 {
+    height: 80px
+}
