@@ -9,29 +9,22 @@ home.style.marginTop = '50px';
 document.body.style.display = 'flex';
 document.body.style.flexDirection = 'column';
 let productsArray = JSON.parse(localStorage.getItem('products'));
-
 for (let i = 0; i < productsArray.length; i++) {
-
     let product = productsArray[i];
     let productDiv = document.createElement('div');
     productDiv.innerText = `Product name - ${product.title}, quantity - ${product.quantity}, price - ${product.price} $, ${product.pic}`;
     let btn = document.createElement('button');
     btn.innerText = 'delete product';
     wrap.append(productDiv, btn);
-
-
     btn.onclick = () => {
-
         productsArray.splice(i, 1);
         localStorage.setItem('products', JSON.stringify(productsArray));
-
         productDiv.remove();
         btn.remove();
         location.reload()
     }
 
 }
-
 
 let deleteAll = document.createElement('button');
 deleteAll.style.width = '100px';
@@ -41,5 +34,4 @@ document.body.append(wrap, deleteAll, home);
 deleteAll.addEventListener('click', () => {
     localStorage.clear();
     wrap.remove()
-
 })
